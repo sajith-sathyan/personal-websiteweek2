@@ -48,11 +48,11 @@
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Sajith Lal PS</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://twitter.com/SAJITHLALPS1" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/sajithlal.lallu" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/sajiith._/" class="instagram"><i class="bx bxl-instagram"></i></a>
+         
+          <a href="https://www.linkedin.com/in/sajith-lal-ps-908887251/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
@@ -72,7 +72,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Sjith Lal PS</h1>
+      <h1>Sajith Lal PS</h1>
       <p>I'm <span class="typed" data-typed-items=" web Developer, Freelancer"></span></p>
     </div>
   </section><!-- End Hero -->
@@ -266,7 +266,7 @@
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>higher secoundary </h4>
+              <h4>high school </h4>
               <h5>2012 - 2015</h5>
               <p><em>St.seabastion higher secondry school, koodaranchi, kozhikode, kerala</em></p>
               <p>I was complete my  high school graduation in St.sebastion High school   school koodaranchi at kozhikode ,Kerala India.started my studes in this school is 2015 and I complete 2017  with 70% mark
@@ -277,6 +277,13 @@
               <h5>2010 - 2014</h5>
               <p><em>fathimmabi memorial higher scondary school</em></p>
               <p>I was complete my  higher school graduation in fathimmabi memorial higher secondary   school koombara at kozhikode ,Kerala India.started my studes in this school is 2015 and I complete 2017  with 70% mark
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Industrial Training Institute(ITI)</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>Gov.iti,Areacode,mallappuram,kerala</em></p>
+              <p>I was complete iti diploma graduation in COPA(Computer Operator And Programming Assistant) at Goverment Iti areacode.started my studes in this school is 2020 and I complete 2021.
               </p>
             </div>
           </div>
@@ -367,37 +374,43 @@
                 <p>91-9074939115  </p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6295075700687!2d76.331672249744!3d10.047399892783448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d18167f5c5f%3A0x93154f2ad50a56b9!2sCorrazone%20Coworking%20Space!5e0!3m2!1sen!2sin!4v1663958060207!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form role="form" id="form" onsubmit="return false">
               <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" >
+                  </div>
+                  <div ><label id="name-error" class="errors"></label></div>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" >
+                  </div>
+                  <div ><label id="email-error" class="errors"></label></div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" >
+                  </div>
+                  <div ><label id="subject-error" class="errors"></label></div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" id="message"></textarea>
+                  </div>
+                  <div ><label id="message-error" class="errors"></label></div>
+                </div>
+                <div class="pt-3 col-md-12 text-center">
+                  <div class="text-success" id="submitted-msg">Message Sent succesfull, Thank You </div>
+                  <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
 
@@ -435,7 +448,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/validation.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
